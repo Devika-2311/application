@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Welcome to ABC Bank</title>
+</head>
+
+<body bgcolor="lavender">
+
+	<h1>Welcome to ABC Bank</h1>
+
+	</body>
+	<input type="hidden" id="username" th:value="${session.username}">
+	<h2><a href="/account/depositPage">deposit</a></h2>
+	<h2><a href="/account/withdrawalPage">withdraw</a></h2>
+	
+	<h2><a href="/account/checkBalance">checkBalance</a></h2>
+	<h2><a href="/account/changePasswordPage">changePassword</a></h2>
+	<h2><a href="/account/editProfile">editProfile</a></h2>
+	
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Login Page</title>
+</head>
+<body bgcolor="lavender">
+    <h1>Login</h1>
+    
+    <!-- If login fails, display a message -->
+    <div th:if="${loginFailed}">
+        <p style="color: red;">Login failed. Please check your credentials.</p>
+    </div>
+    
+    <h2>Login</h2>
+    <form action="/account/loginacc" method="post">
+        Username: <input type="text" name="username" required><br>
+        Password: <input type="password" name="password" required><br>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>

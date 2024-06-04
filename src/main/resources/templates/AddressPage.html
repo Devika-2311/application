@@ -1,0 +1,21 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Email Page</title>
+</head>
+
+<body bgcolor="lavender">
+	<h1> Change Email</h1>
+
+
+	<form action="/account/changeAddress" method="post">
+		<input type="hidden" name="_method" value="put" />
+		<input type="hidden" name="username" th:value="${session.username}">
+		Address: <input type="text" name="address" required>
+		<button type="submit">Change Address</button>
+	</form>
+
+
+</body>
+
+</html>

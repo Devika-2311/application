@@ -1,0 +1,15 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Deposit Page</title>
+</head>
+<body bgcolor="lavender">
+    <h1>Deposit</h1>
+
+		<form action="/account/deposit" method="post" >
+		  <input type="hidden" name="_method" value="put" />
+	    <input type="hidden" name="username" th:value="${session.username}">
+	    Amount: <input type="number" name="amount" step="0.01" required>
+	    <button type="submit">Deposit</button>
+	</form>
+		</body>
+		</html>
