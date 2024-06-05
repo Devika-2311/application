@@ -19,6 +19,7 @@
 		<spring-cloud.version>2023.0.0</spring-cloud.version>
 	</properties>
 	<dependencies>
+			
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
@@ -70,11 +71,7 @@
     <version>3.0.2</version>
 </dependency>
 
-		<dependency>
-			<groupId>com.example</groupId>
-			<artifactId>BankingAssignment</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+	
 	</dependencies>
 <dependencyManagement>
 		<dependencies>
