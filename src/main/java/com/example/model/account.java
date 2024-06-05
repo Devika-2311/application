@@ -6,13 +6,6 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotNull;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-@AllArgsConstructor
-@NoArgsConstructor
-@Data
 
 @Entity
 public class account {
@@ -87,7 +80,7 @@ public class account {
 		return "account [name=" + name + ", username=" + username + ", password=" + password + ", age=" + age + ", ssn="
 				+ ssn + ", address=" + address + ", email=" + email + ", phone=" + phone + ", balance=" + balance + "]";
 	}
-	public account(String name, String username, @NotNull String password, int age, String ssn, String address,
+	public account(String name, String username,String password, int age, String ssn, String address,
 			String email, String phone, float balance) {
 		super();
 		this.name = name;
